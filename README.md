@@ -1,6 +1,6 @@
 # installation
-## TODO research 1 to do this
-pip-install anyNote
+pip install -i https://test.pypi.org/simple/ anyNote2-MichaVardy
+
 
 # Use
 ```
@@ -10,8 +10,11 @@ pip-install anyNote
     $ anyNote SET_KEYWORD_TEMPLATE  # keyword template, all template files are stored in template dir in anyNote root, file name is keyword name
     $ anyNote SET_KEYWORD_OPTION    # sets keyword options, usually used to run to open external programs
     $ anyNote                       # traverse through hiarchy tree
+    $ anyNote -pdf                  # output anyNote as pdf
     $ anyNote -rm <node>            # remove selected child branch
     $ anyNote WRITE                 # traverse through hiarchy tree, once the correct node is selected, insert text
+    $ anyNote WRITE -g              # select global notes directory, should be set in set_path
+    $ anyNote WRITE -d <dir>        # traverse through hiarchy tree, once the correct node is selected, insert text
     $ anyNote TODO                  # keyword node, saves todo information that can be displayed in a todo list
     $ anyNote TODO -l               # keyword node, todo list display
     $ anyNote STATUS                # keyword node, saves status information which can be displayed as status report list
